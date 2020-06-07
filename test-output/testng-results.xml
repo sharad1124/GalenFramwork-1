@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="80678" started-at="2020-06-04T18:09:37Z" finished-at="2020-06-04T18:10:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="80678" started-at="2020-06-04T18:09:37Z" finished-at="2020-06-04T18:10:58Z">
+      <class name="com.galenframework.java.sample.tests.ISMMapPage">
+        <test-method status="PASS" signature="initDriver([Ljava.lang.Object;)[pri:0, instance:com.galenframework.java.sample.tests.ISMMapPage@1bce4f0a]" name="initDriver" is-config="true" duration-ms="2227" started-at="2020-06-04T23:39:37Z" finished-at="2020-06-04T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d167f58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="initReport(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.galenframework.java.sample.tests.ISMMapPage@1bce4f0a]" name="initReport" is-config="true" duration-ms="4" started-at="2020-06-04T23:39:39Z" finished-at="2020-06-04T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.galenframework.java.sample.tests.ISMMapPage.ISM_MAP_Page_onDevice(com.galenframework.java.sample.components.GalenTestBase$TestDevice) throws java.io.IOException,java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d167f58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="FAIL" signature="ISM_MAP_Page_onDevice(com.galenframework.java.sample.components.GalenTestBase$TestDevice)[pri:0, instance:com.galenframework.java.sample.tests.ISMMapPage@1bce4f0a]" name="ISM_MAP_Page_onDevice" duration-ms="78242" started-at="2020-06-04T23:39:39Z" data-provider="devices" finished-at="2020-06-04T23:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[desktop 1680x900]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.galenframework.support.LayoutValidationException">
+            <message>
+              <![CDATA[/specs/ISMMapPage.spec, tags: [desktop]
+  - "header-infoicon" is 63px top instead of 60px (/specs/ISMMapPage.spec:160)
+  - "header-infoicon" is 9px top instead of 6px, is 4px bottom instead of 7px (/specs/ISMMapPage.spec:163)
+  - "header-qty" is 16px below "header-infoicon" instead of 19px (/specs/ISMMapPage.spec:243)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.galenframework.support.LayoutValidationException: /specs/ISMMapPage.spec, tags: [desktop]
+  - "header-infoicon" is 63px top instead of 60px (/specs/ISMMapPage.spec:160)
+  - "header-infoicon" is 9px top instead of 6px, is 4px bottom instead of 7px (/specs/ISMMapPage.spec:163)
+  - "header-qty" is 16px below "header-infoicon" instead of 19px (/specs/ISMMapPage.spec:243)
+
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:129)
+	at com.galenframework.support.GalenJavaTestBase.checkLayout(GalenJavaTestBase.java:111)
+	at com.galenframework.java.sample.tests.ISMMapPage.ISM_MAP_Page_onDevice(ISMMapPage.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.galenframework.support.LayoutValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ISM_MAP_Page_onDevice -->
+        <test-method status="PASS" signature="provideTestEndDate()[pri:0, instance:com.galenframework.java.sample.tests.ISMMapPage@1bce4f0a]" name="provideTestEndDate" is-config="true" duration-ms="1" started-at="2020-06-04T23:40:58Z" finished-at="2020-06-04T23:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideTestEndDate -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.galenframework.java.sample.tests.ISMMapPage@1bce4f0a]" name="quitDriver" is-config="true" duration-ms="189" started-at="2020-06-04T23:40:58Z" finished-at="2020-06-04T23:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.galenframework.java.sample.tests.ISMMapPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
